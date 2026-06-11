@@ -330,6 +330,7 @@
     .badge-desktop { background: #fff7ed; color: #c2410c; border: 1px solid #fed7aa; }
     .badge-backend { background: #f0fdf4; color: #15803d; border: 1px solid #bbf7d0; }
     .badge-tool { background: #fefce8; color: #a16207; border: 1px solid #fde68a; }
+    .badge-private { background: #f3f4f6; color: #374151; border: 1px solid #d1d5db; }
 
     .card-name {
       font-size: 1rem;
@@ -623,11 +624,11 @@
 
       <div class="hero-stats">
         <div class="stat">
-          <div class="stat-num">7+</div>
+          <div class="stat-num">8+</div>
           <div class="stat-label">Projects shipped</div>
         </div>
         <div class="stat">
-          <div class="stat-num">3</div>
+          <div class="stat-num">4</div>
           <div class="stat-label">Live apps</div>
         </div>
         <div class="stat">
@@ -649,6 +650,34 @@
     <p class="section-sub reveal">A mix of mobile apps, web platforms, desktop tools, and APIs — built with real users in mind.</p>
 
     <div class="projects-grid">
+
+      <!-- MediaHub -->
+      <div class="project-card reveal">
+        <div class="card-top">
+          <div class="card-icon">🎬</div>
+          <div class="card-badges">
+            <span class="badge badge-web">Full-Stack</span>
+            <span class="badge badge-private">Private</span>
+          </div>
+        </div>
+        <div class="card-name">Private Streaming Platform</div>
+        <div class="card-desc">Built a Netflix-style streaming platform with PIN-protected profiles, hero carousel, section-based content library, and last-watched tracking. Includes a complete media pipeline — ffmpeg for codec conversion (HEVC → H.264, multi-channel audio downmix), boto3 multipart for large file uploads to Cloudflare R2, and yt-dlp for content sourcing. Deployed across two isolated Cloudflare accounts. Ran a full security audit identifying and fixing 10 issues before launch.</div>
+        <div class="card-stack">
+          <span class="stack-tag">React</span>
+          <span class="stack-tag">Cloudflare Workers</span>
+          <span class="stack-tag">D1 (SQLite)</span>
+          <span class="stack-tag">R2</span>
+          <span class="stack-tag">Hono</span>
+          <span class="stack-tag">Python</span>
+          <span class="stack-tag">ffmpeg</span>
+        </div>
+        <div class="card-links">
+          <span style="font-size:0.78rem; color: var(--ink-light); display:flex; align-items:center; gap:0.3rem;">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            Private — content copyright
+          </span>
+        </div>
+      </div>
 
       <!-- Clarity in Calm -->
       <div class="project-card reveal">
